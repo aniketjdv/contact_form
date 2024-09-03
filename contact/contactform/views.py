@@ -13,3 +13,6 @@ def contact_form(request):
     else:
         form=ContactForm()
     return render(request,'contact.html',{'form':form})
+
+def success(request):
+    return render(request,'success.html')

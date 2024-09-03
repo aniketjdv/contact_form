@@ -1,15 +1,39 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Select the form
+            var form = document.querySelector("form");
+
+            // Clear all text inputs and textareas
+            if (form) {
+                form.reset(); // Reset the form fields
+            }
+        });
+    </script>
+
 </head>
 <body>
-    <form method="POST">
-    {% csrf_token %}
-    {{form}}
-    <button type="Submit">SEND</button>
-    </form>
+    <div class="container">
+        <div class="text-section">
+        <h1>Contact Us</h1>
+        </div>
+        <div class="form_container">  
+            <form method="POST">
+            {% csrf_token %}
+            {{form}}
+            <button type="Submit" class="submit-btn">SEND</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
