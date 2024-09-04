@@ -15,4 +15,6 @@ def contact_form(request):
     return render(request,'contact.html',{'form':form})
 
 def success(request):
+    if request.method == 'POST':
+        return redirect('contact_form')
     return render(request,'success.html')
