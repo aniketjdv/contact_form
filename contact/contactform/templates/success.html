@@ -12,12 +12,13 @@
 </head>
 <body>
     <div class="background">
-    <div class="container" style="flex-direction: column;">
+    <div class="container" style="flex-direction: column;" id="s1">
     <h1>You Query Successfuly Submited </h1>
-    <button class="submit-btn" id="sumbit_button">Send again</button>
+    {% comment %} <input type="button" value="Send" class="submit-btn" onclicked='clicked()'> {% endcomment %}
+    <button class="submit-btn" id="b1">Send again</button>
     </div>
 </div>
 
-
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
