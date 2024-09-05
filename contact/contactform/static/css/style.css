@@ -45,6 +45,10 @@ body{
     box-shadow: 16px 15px 30px -15px #2f2f2f;
 }
 
+.text-section{
+    margin-right: 10px;
+}
+
 .form_container{
     display: flex;
     background-color: rgb(247, 181, 1);
@@ -105,6 +109,55 @@ body{
     color: black;
     margin-right: 10px;
 }
+
+/* query page css */
+.container-query{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    width: 66rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 16px 15px 30px -15px #2f2f2f;
+    flex-direction: column;
+}
+
+
+table {
+    width: 88%;
+    border-collapse: collapse;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* table, th, td {
+     border: 1px solid black; 
+} */
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    text-align: center;
+    padding: 8px;
+    background-color:rgb(247, 181, 1);
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+thead:first-child tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+
+}
+
+thead:first-child tr:last-child th:last-child {
+    border-radius: 0 10px 0 0;
+
+}
+
+
 
 /* for mobile devices */
 
@@ -178,7 +231,6 @@ body{
        
     }
 }
-
 
 @media screen and (max-width:768px) {
     .container{
