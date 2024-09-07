@@ -28,7 +28,8 @@ def query(request):
     return render(request,'queries.html',{'data':data})
 
 def delete_item(request, item_id):
+    id=item_id
     if request.method == 'POST':
-        item = get_object_or_404(Contact_Enquriy, id=item_id)
+        item=Contact_Enquriy.objects.get(pk=id)
         item.delete()
-        return redirect('/query')
+        return redirect('/contactform/query')

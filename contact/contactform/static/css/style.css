@@ -156,12 +156,25 @@ thead:first-child tr:last-child th:last-child {
     border-radius: 0 10px 0 0;
 
 }
+tbody tr:nth-child(even) td:last-child{
+    background-color: #ffffff;
+}
 
+
+.delete-btn{
+    border: none;
+    background: none;
+  color: black;
+  font-size: 1em;
+}
+.delete-btn:hover{
+    color: red;
+}
 
 
 /* for mobile devices */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
     .container{
         background-color: rgb(255, 255, 255);
         flex-direction: column;
@@ -231,8 +244,8 @@ thead:first-child tr:last-child th:last-child {
        
     }
 }
-
-@media screen and (max-width:768px) {
+/* for tablet screen */
+@media screen and (max-width:768px) and (min-width:480px) {
     .container{
         background-color: rgb(255, 255, 255);
         flex-direction: column;
