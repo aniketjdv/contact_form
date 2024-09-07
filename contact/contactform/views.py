@@ -6,7 +6,7 @@ import requests
 from django.shortcuts import redirect, get_object_or_404
 # Create your views here.
 
-def contact_form(request):
+def contact_form(request): 
     enq=None
     if request.method == 'POST':
         form=ContactForm(request.POST)
