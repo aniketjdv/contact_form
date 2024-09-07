@@ -24,7 +24,7 @@ def success(request):
 
 def query(request):
     response = requests.get('http://127.0.0.1:8000/api/v1/contacts/')
-    data = response.json()  # Assuming the API returns JSON data
+    data = response.json()
     return render(request,'queries.html',{'data':data})
 
 def delete_item(request, item_id):
